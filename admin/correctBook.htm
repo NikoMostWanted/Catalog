@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../user/style.css">
+    <title>Редактировать книги</title>
+</head>
+<body>
+<form action="<?= $_SERVER['SCRIPT_NAME']; ?>" method="post">
+    <table align='center' border='1'>
+        <tr>
+            <td>ID</td>
+            <td>Название книги</td>
+            <td>Автор</td>
+            <td>Жанр</td>
+            <td>Краткое описание</td>
+            <td>Цена</td>
+        </tr>
+        <?php for ($i = 0; $i < count($result); $i++) { ?>
+        <tr>
+            <?php for ($j = 0; $j < count($result[0]); $j++) { ?>
+            <td><?= $result[$i][$j]; ?></td>
+            <?php } ?>
+            <input type='hidden' name='ID[<?= $i; ?>]' value='<?= $result[$i][0]; ?>'>
+            <td><input type='submit' name='update[<?= $i; ?>]' value='Редактировать'></td>
+            <td><input type='submit' name='delete[<?= $i; ?>]' value='Удалить'></td>
+        </tr>
+        <?php } ?>
+    </table>
+</form>
+<div class="correct">
+    <a href="index.html">Назад</a>
+</div>
+</body>
+</html>

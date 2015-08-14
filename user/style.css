@@ -1,0 +1,199 @@
+.list ul li {
+    margin: 0 auto;
+    width: 200px;
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #EAEAEA;
+}
+.list ul {
+    padding: 0px;
+}
+
+.list p {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-variant-caps: titling-caps;
+}
+
+.list ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.list ul li:hover {
+    background: gray;
+}
+
+.list {
+    width: 30%;
+    border:1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+a.button {
+    background: antiquewhite;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background: #D4C5B1;
+}
+
+a.button:active {
+    background-image: radial-gradient(45% 45% at 50% 100%, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .3));
+    box-shadow: inset rgba(162, 95, 42, .4) 0 0 0 1px,
+    inset rgba(255, 255, 255, .9) 0 0 1px 3px;
+}
+
+.admin {
+    background: antiquewhite;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    float: right;
+}
+.admin a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.admin:hover {
+    background: #D4C5B1;
+}
+.admin:active {
+    background-image: radial-gradient(45% 45% at 50% 100%, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .3));
+    box-shadow: inset rgba(162, 95, 42, .4) 0 0 0 1px,
+    inset rgba(255, 255, 255, .9) 0 0 1px 3px;
+}
+.add input {
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
+.add textarea {
+    margin-left: 400px;
+    margin-bottom:20px;
+}
+.addhyper a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.addhyper a:hover {
+    background: greenyellow;
+}
+.correct a {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.correct a:hover {
+    padding: 10px;
+    background: lawngreen;
+}
+.redact input {
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
+.redact textarea {
+    margin-left: 400px;
+    margin-bottom:20px;
+}
+.redact a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.redact a:hover {
+    background: greenyellow;
+}
+.bookshyper a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.bookshyper a:hover {
+    background: greenyellow;
+}
+.bookshyper {
+    position: relative;
+    top: 20px;
+}
+.books ul li {
+    margin: 5px;
+    width: 400px;
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #EAEAEA;
+}
+.books ul {
+    padding: 0px;
+}
+
+.books ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.books ul li:hover {
+    background: gray;
+}
+
+.books {
+    width: 60%;
+    border:1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+.more input {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.morehyp a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.morehyp a:hover {
+    background: greenyellow;
+}
+.morehyp {
+    position: relative;
+    top: 20px;
+}
+.moreinfo ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}

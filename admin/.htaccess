@@ -1,0 +1,7 @@
+<Files .htpasswd>
+   deny from all
+</Files>
+AuthType Basic
+AuthName "Private zone. Only for administrator!"
+AuthUserFile  /opt/lampp/htdocs/Catalog/admin/.htpasswd
+require valid-user

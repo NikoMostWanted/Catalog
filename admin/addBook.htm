@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../user/style.css">
+    <title>Добавить книгу</title>
+</head>
+<body>
+    <div class="add">
+        <form action="addBook.php" method="post">
+            <input type="text" size="70" placeholder="Название книги" name="nameBook" required><br/>
+            <textarea cols="54" rows="10" placeholder="Краткое описание" name="description" required></textarea><br/>
+            <input type="number" name="price" min="1" placeholder="Цена" required><br/>
+            <input type="text" size="70" name="author" placeholder="Автор" required><br/>
+            <input type="text" size="70" name="genre" placeholder="Жанр" required><br/>
+            <input type="submit" name="add" value="Добавить книгу"><br/>
+        </form>
+    </div>
+    <div class="addhyper">
+        <a href="index.html">Назад</a>
+    </div>
+</body>
+</html>

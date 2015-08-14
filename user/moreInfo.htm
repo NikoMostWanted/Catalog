@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Больше информации</title>
+</head>
+<body>
+    <div class="moreinfo">
+        <ul>
+            <li>Название книги: <?=$nameBook;?></li>
+            <li>Автор: <?=$author;?></li>
+            <li>Краткое описание: <?=$description;?></li>
+            <li>Цена: <?=$price;?></li>
+        </ul>
+    </div>
+    <div class="more">
+        <form action="send.php" method="post">
+            <input type="text" size="70" name="address" placeholder="Адрес" required><br/>
+            <input type="text" size="70" name="fio" placeholder="ФИО" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required><br/>
+            <input type="number" min="1" placeholder="Количество экземпляров" name="count" required><br/>
+            <input type="submit" name="buy" value="Купить">
+        </form>
+    </div>
+    <div class="morehyp">
+        <a href="listBooks.php">Назад</a>
+    </div>
+</body>
+</html>

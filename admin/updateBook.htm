@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../user/style.css">
+    <title>Обновить книгу</title>
+</head>
+<body>
+<div class="redact">
+    <form action="updateBook.php" method="post">
+        <?php foreach($result as $key=>$value) { ?>
+            <?php if($key=='description') { ?>
+            <textarea cols='54' rows='10'  name='<?=$key;?>' required><?=$value;?></textarea><br/>
+            <?php }?>
+            <?php if($key=='price') { ?>
+                <input type='number' min='1' size='70' name='<?=$key;?>' value='<?=$value;?>' required><br/>
+            <?php } ?>
+        <?php } ?>
+        <input type='hidden' name='ID' value="<?=$result['id'];?>">
+        <input type='submit' value='Редактировать' name='update'>
+    </form>
+    <a href="correctBook.php">Назад</a>
+</div>
+</body>
+</html>

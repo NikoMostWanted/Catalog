@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Список книг</title>
+</head>
+<body>
+    <div class="books">
+        <ul>
+            <?php for($i=0;$i<count($result);$i++) { ?>
+            <li><a href="moreInfo.php?id=<?=$result[$i][0];?>"><?=$result[$i][1];?></a></li>
+            <?php } ?>
+        </ul>
+    </div>
+    <div class="bookshyper">
+        <a href="index.php">Назад</a>
+    </div>
+</body>
+</html>

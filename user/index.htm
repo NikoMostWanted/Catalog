@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="admin">
+        <a href="../admin/index.html">admin</a>
+    </div>
+    <div class="list">
+        <p>Жанр</p>
+        <ul>
+            <?php for ($i = 0; $i < count($genre); $i++) { ?>
+            <li><a href="listBooks.php?genre=<?= $genre[$i]; ?>"><?= $genre[$i]; ?></a></li>
+            <?php } ?>
+        </ul>
+        <p>Автор</p>
+        <ul>
+            <?php for ($i = 0; $i < count($author); $i++) { ?>
+            <li><a href="listBooks.php?author=<?= $author[$i]; ?>"><?= $author[$i]; ?></a></li>
+            <?php } ?>
+        </ul>
+    </div>
+</body>
+</html>

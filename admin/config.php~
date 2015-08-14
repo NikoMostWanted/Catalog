@@ -1,0 +1,7 @@
+<?php
+    define('LOCALHOST','localhost');
+    define('NAME','root');
+    define('PASSWORD','');
+    define('DATABASE','catalog');
+    define('EMAIL','kolu4ka02031995@gmail.com');
+?>
